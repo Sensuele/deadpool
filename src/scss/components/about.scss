@@ -1,0 +1,35 @@
+.about {
+  background: $c-white;
+
+  &-wrap {
+    display: flex;
+  }
+
+  &__descr {
+    padding-left: 25px;
+    padding-right: 100px;
+    font-size: 18px;
+  }
+
+  &__reviews {
+    padding: 40px;
+  }
+
+  &-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__item {
+      font-size: 18px;
+    }
+
+    &__inner {
+      display: block;
+    }
+  }
+}
