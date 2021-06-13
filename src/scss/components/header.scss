@@ -1,4 +1,59 @@
 .header {
+  padding: 0px 60px;
+  margin-top: 30px;
   background: url(../assets/img/header-bg.png) 50% 0 / contain no-repeat;
   height: 450px;
+  color: $c-white;
+  display: flex;
+  justify-content: space-between;
+
+  &-name {
+    font-family: $f-secondary;
+
+
+    &__title {
+      font-size: 90px;
+      font-weight: normal;
+    }
+
+    &__subtitle {
+      display: block;
+      font-size: 40px;
+
+      &_colored {
+        color: $c-bright;
+      }
+    }
+  }
+
+  &__logo {
+    margin-top: 20px;
+  }
+
+  &-logo {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+
+    &__text {
+      color: $c-bright;
+      display: block;
+      font-size: 40px;
+    }
+  }
+
+  &-nav {
+
+    &__list {
+      @include list-reset;
+      margin-top: 40px;
+    }
+
+    &__item {
+      @include btn;
+      margin-bottom: 3px;
+      font-size: 20px;
+      color: $c-white;
+    }
+  }
 }

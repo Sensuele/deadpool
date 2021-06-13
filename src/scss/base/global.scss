@@ -1,9 +1,24 @@
 * {
   box-sizing: border-box;
   outline: none;
-  font-family: 'HelveticaNeueCyrThin';
 }
 
+body {
+  background: $c-black;
+  font-family: $f-main;
+
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: $default-transition;
+  color: inherit;
+  display: block;
+}
 
 .container {
   max-width: 1300px;
