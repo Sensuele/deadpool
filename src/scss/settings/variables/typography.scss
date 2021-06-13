@@ -1,0 +1,20 @@
+// Typography variables
+// stylelint-disable declaration-bang-space-before
+
+/* Fonts */
+$f-sans-serif: 'Graphik', sans-serif;
+$f-serif: 'Canela', serif;
+$f-logo: 'Guardian Sans', sans-serif;
+
+/* Base variables */
+$main-font: $f-sans-serif;
+$main-font-size: 16px;
+$main-line-height: 1.5;
+$main-text-color: $c-gray-93;
+$heading-font: $f-serif;
+$heading-color: $c-gray-93;
+$link-color: $c-blue;
+$link-color-hover: $c-dark-blue-20;
+
+$default-transition-time: .3s;
+$default-transition: all $default-transition-time;
