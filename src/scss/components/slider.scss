@@ -27,6 +27,11 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
+
+    @include _560 {
+      text-align: center;
+    }
+
     img {
       filter: grayscale(50%);
 
@@ -92,4 +97,14 @@
   height: 100%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.5);
+
+  @include _560 {
+    padding: 0 16px;
+  }
+
+  img {
+    @include _560 {
+      width: 100%;
+    }
+  }
 }

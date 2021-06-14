@@ -16,7 +16,6 @@ let childSlider = new Swiper('.swiper-container', {
     },
     560: {
       slidesPerView: 1,
-      spaceBetween: 15,
     },
   }
 });
