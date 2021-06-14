@@ -1,0 +1,18 @@
+.footer {
+  &-nav {
+    &__list {
+      @include list-reset;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 0;
+
+    }
+    &__item {
+      color: $c-white;
+      font-size: 14px;
+      margin-left: 15px;
+      opacity: 0.8;
+    }
+  }
+}
