@@ -1,11 +1,19 @@
 .header {
   padding: 0px 60px;
   margin-top: 30px;
-  background: url(../assets/img/header-bg.png) 50% 0 / contain no-repeat;
+  background: url(../assets/img/header-bg.png) 50% 100% / contain no-repeat;
   height: 450px;
   color: $c-white;
   display: flex;
   justify-content: space-between;
+
+  @include _991 {
+    padding: 0 25px;
+  }
+
+  @include _560 {
+    padding: 0 16px;
+  }
 
   &-name {
     font-family: $f-secondary;
@@ -14,11 +22,19 @@
     &__title {
       font-size: 90px;
       font-weight: normal;
+
+      @include _560 {
+        font-size: 40px;
+      }
     }
 
     &__subtitle {
       display: block;
       font-size: 40px;
+
+      @include _560 {
+        font-size: 20px;
+      }
 
       &_colored {
         color: $c-bright;
@@ -28,6 +44,10 @@
 
   &__logo {
     margin-top: 20px;
+
+    @include _560 {
+      margin-top: 0;
+    }
   }
 
   &-logo {
@@ -39,6 +59,10 @@
       color: $c-bright;
       display: block;
       font-size: 40px;
+
+      @include _560 {
+        font-size: 20px;
+      }
     }
   }
 
@@ -47,6 +71,10 @@
     &__list {
       @include list-reset;
       margin-top: 40px;
+
+      @include _991 {
+        margin-top: 20px;
+      }
     }
 
     &__item {
@@ -54,6 +82,11 @@
       margin-bottom: 3px;
       font-size: 20px;
       color: $c-white;
+
+      @include _991 {
+        font-size: 16px;
+        margin-bottom: 7px;
+      }
     }
   }
 }

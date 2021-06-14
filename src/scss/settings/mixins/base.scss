@@ -10,12 +10,29 @@
   border: none;
   transition: $default-transition;
 
+  
+
   &:hover {
     background: lighten($c-bright, 10%);
   }
 
   a {
   padding: 3px 50px;
+
+  @include _991 {
+    padding: 3px 20px;
+  }
   }
 }
 
+@mixin _991 {
+  @media (max-width: 991px){
+      @content;
+  }
+}
+
+@mixin _560 {
+  @media (max-width: 560px){
+      @content;
+  }
+}

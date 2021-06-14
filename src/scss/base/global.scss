@@ -1,10 +1,9 @@
 * {
   box-sizing: border-box;
-  outline: none;
 }
 
 body {
-  background: $c-black;
+  margin: 0;
   font-family: $f-main;
   overflow-x: hidden;
   background: linear-gradient($c-black 30%, black 45%);
