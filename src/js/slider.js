@@ -20,6 +20,3 @@ let childSlider = new Swiper('.swiper-container', {
     },
   }
 });
-
-
-

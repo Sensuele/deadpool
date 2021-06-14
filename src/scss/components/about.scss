@@ -58,6 +58,39 @@
 
     &__item {
       font-size: 18px;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        &::after {
+          width: 90%;
+          background: #b7ffb1;
+        }
+      }
+
+      &:nth-child(3) {
+        &::after {
+          width: 20%;
+          background: #d7d7d7;
+        }
+      }
+
+      &:nth-child(4) {
+        &::after {
+          width: 20%;
+          background: #ffb1b1;
+        }
+      }
 
       @include _560 {
         margin-top: 15px;

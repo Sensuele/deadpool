@@ -10,3 +10,4 @@ import '../assets/img/video.jpg';
 import '../assets/video/video.mp4';
 
 import './slider';
+import './zoom-in';

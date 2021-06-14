@@ -43,7 +43,11 @@
     "last 3 iOS versions"
   ],
   "dependencies": {
+    "basiclightbox": "^5.0.4",
     "core-js": "^3.6.5",
+    "glightbox": "^3.0.9",
+    "lightbox2": "^2.11.3",
+    "lightgallery.js": "^1.4.0",
     "sass": "^1.27.0",
     "select2": "~4.0",
     "swiper": "^4.5.1",
