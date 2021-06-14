@@ -76,6 +76,20 @@ module.exports = {
         }]
       },
 
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+              loader: "file-loader",
+              options: {
+                  name: "[name].[ext]",
+                  outputPath: "./assets/video",
+                  publicPath: './assets/video',
+              }
+          }
+      ]
+      },
+
     ]
   },
 
