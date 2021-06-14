@@ -1,0 +1,34 @@
+.swiper-container {
+  overflow: hidden;
+  display: flex;
+}
+.swiper-button-prev {
+  left: 40px;
+}
+
+.swiper-button-next {
+  right: 40px;
+}
+
+.slider {
+  background: $c-white;
+  &-wrap {
+    display: flex;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__slide {
+    cursor: pointer;
+  }
+
+  &-block {
+    position: relative;
+    padding: 60px 100px;
+  }
+}
